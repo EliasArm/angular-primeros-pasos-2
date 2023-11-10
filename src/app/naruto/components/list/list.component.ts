@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Character } from '../../interfaces/character.interface';
 
 @Component({
   selector: 'naruto-list',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
+
+  listCharacter: Character[] = [{
+    name: 'Rock',
+    clan: 'Lee',
+    power: 250
+  },{
+    name: 'Sasuke',
+    clan: 'Uchiha',
+    power: 240
+  }]
 
 }

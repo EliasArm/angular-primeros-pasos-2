@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Character } from '../../interfaces/character.interface';
 
 @Component({
   selector: 'naruto-add-character',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-character.component.css']
 })
 export class AddCharacterComponent {
+
+  character: Character = {
+    name: '',
+    clan: '',
+    power: 0
+  }
+
 
 }
