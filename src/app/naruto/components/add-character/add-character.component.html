@@ -4,23 +4,26 @@
     <form action="" class="row">
       <input
         type="text"
+        [(ngModel)]="character.name"
         class="form-control mb-2"
         name="name"
         placeholder="Name"
       />
       <input
         type="text"
+        [(ngModel)]="character.clan"
         class="form-control mb-2"
         name="clan"
         placeholder="Clan"
       />
       <input
         type="text"
+        [(ngModel)]="character.power"
         class="form-control mb-2"
         name="power"
         placeholder="Power"
       />
-      <button class="btn btn-primary">Add</button>
+      <button (click)="addCharacter()" class="btn btn-primary">Add</button>
     </form>
   </div>
   <div>
