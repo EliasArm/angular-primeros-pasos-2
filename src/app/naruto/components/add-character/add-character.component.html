@@ -1,7 +1,7 @@
 <div class="col-md-8">
   <p class="fs-4 fw-light">Add Character</p>
   <div>
-    <form action="" class="row">
+    <form action="" class="row" (ngSubmit)="addCharacter()">
       <input
         type="text"
         [(ngModel)]="character.name"
@@ -23,12 +23,12 @@
         name="power"
         placeholder="Power"
       />
-      <button (click)="addCharacter()" class="btn btn-primary">Add</button>
+      <button class="btn btn-primary">Add</button>
     </form>
   </div>
-  <div>
+  <!-- <div>
     <pre>
       {{ character | json }}
     </pre>
-  </div>
+  </div> -->
 </div>

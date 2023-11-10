@@ -11,10 +11,15 @@
   </div>
   <div class="row">
     <div class="col">
-      <naruto-list></naruto-list>
+      <naruto-list
+        [listCharacter]="characters"
+        (onDeleteCharacter)="deleteCharacter($event)"
+      ></naruto-list>
     </div>
     <div class="col">
-      <naruto-add-character></naruto-add-character>
+      <naruto-add-character
+        (onNewCharacter)="addCharacter($event)"
+      ></naruto-add-character>
     </div>
   </div>
 </div>
